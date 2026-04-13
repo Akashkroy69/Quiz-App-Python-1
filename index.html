@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Practice Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="panel hero" id="welcome-screen">
+      <p class="eyebrow">Python Classes 11, 12 and 13</p>
+      <h1>Simple Practice Exam</h1>
+      <p class="intro">
+        This test uses easy Python basics only. You will get 10 random questions out of 20.
+      </p>
+
+      <div class="name-box">
+        <label for="student-name">Student name</label>
+        <input id="student-name" type="text" maxlength="40" placeholder="Enter your name">
+      </div>
+
+      <div class="topic-list" aria-label="Topics included">
+        <span>odd / even</span>
+        <span>remainder</span>
+        <span>divisible by 3, 5, 7</span>
+        <span>if / elif / else</span>
+        <span>for loop and range()</span>
+      </div>
+
+      <button id="start-btn" class="primary-btn">Start Test</button>
+      <p id="name-error" class="error-text" aria-live="polite"></p>
+    </section>
+
+    <section class="panel exam hidden" id="exam-screen">
+      <div class="dashboard">
+        <div class="dash-item">
+          <span class="dash-label">Student</span>
+          <strong id="dash-name">-</strong>
+        </div>
+        <div class="dash-item">
+          <span class="dash-label">Question</span>
+          <strong id="question-count">1 / 10</strong>
+        </div>
+        <div class="dash-item">
+          <span class="dash-label">Score</span>
+          <strong id="live-score">0</strong>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <p class="question-type" id="question-type">Question</p>
+        <h2 id="question-text">Question text</h2>
+        <div id="options" class="options"></div>
+      </div>
+
+      <div class="exam-actions">
+        <button id="next-btn" class="primary-btn">Next</button>
+      </div>
+    </section>
+
+    <section class="panel result hidden" id="result-screen">
+      <p class="eyebrow">Test Finished</p>
+      <h2>Your Result</h2>
+
+      <div class="result-summary">
+        <div>
+          <span class="dash-label">Student</span>
+          <strong id="result-name">-</strong>
+        </div>
+        <div>
+          <span class="dash-label">Final Score</span>
+          <strong id="result-score">0 / 10</strong>
+        </div>
+        <div>
+          <span class="dash-label">Date</span>
+          <strong id="result-date">-</strong>
+        </div>
+      </div>
+
+      <p id="result-message" class="positive-message"></p>
+
+      <article class="score-card" id="score-card">
+        <div class="score-card__top">
+          <p class="score-card__tag">Python Achievement Card</p>
+          <h3 id="card-name">Student Name</h3>
+        </div>
+        <div class="score-card__score-wrap">
+          <p class="score-card__label">Score</p>
+          <p class="score-card__score" id="card-score">0 / 10</p>
+        </div>
+        <p class="score-card__date" id="card-date">Date</p>
+        <p class="score-card__message" id="card-message">
+          You did a good job today. Keep going one step at a time.
+        </p>
+      </article>
+
+      <div class="result-actions">
+        <button id="download-btn" class="primary-btn">Download Score Card</button>
+        <button id="restart-btn" class="secondary-btn">Try Another Test</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
