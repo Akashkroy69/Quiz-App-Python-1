@@ -1,8 +1,8 @@
 const questionBank = [
   {
     type: "Odd or Even",
-    text: "If `num = 8`, what is the correct answer?",
-    options: ["8 is odd", "8 is even", "8 is divisible by 3", "8 is hot"],
+    text: "If num = 8, what is the correct answer?",
+    options: ["8 is odd", "8 is even", "8 is divisible by 5", "8 is divisible by 7"],
     answer: "8 is even",
   },
   {
@@ -44,19 +44,19 @@ const questionBank = [
   {
     type: "if else",
     text: "In Python, which word starts a condition?",
-    options: ["loop", "if", "print", "range"],
+    options: ["if", "else", "for", "print"],
     answer: "if",
   },
   {
     type: "if elif else",
     text: "Which word checks another condition after `if`?",
-    options: ["elif", "input", "int", "for"],
+    options: ["elif", "else", "for", "range"],
     answer: "elif",
   },
   {
     type: "Input",
     text: "Which code is used to take number input from the user?",
-    options: ["print(num)", "num = int(input())", "for i in range(5)", "num == 5"],
+    options: ["num = int(input())", "print(num)", "num == 5", "for i in range(5)"],
     answer: "num = int(input())",
   },
   {
@@ -74,7 +74,7 @@ const questionBank = [
   {
     type: "for loop",
     text: "Which code starts a loop?",
-    options: ["if i in range(5):", "for i in range(5):", "input i in range(5):", "int i in range(5):"],
+    options: ["for i in range(5):", "if i in range(5):", "range i in 5:", "print(i, range(5))"],
     answer: "for i in range(5):",
   },
   {
@@ -97,41 +97,41 @@ const questionBank = [
   },
   {
     type: "Temperature program",
-    text: "If temperature is `15`, what should the program print?",
+    text: "If temperature is 15, what should the program print?",
     options: [
       "It is winter, take coat!!",
       "It is hot outside, wear tshirts",
       "It is too hot, dont go outside!!",
-      "15 is even",
+      "The number is not divisible by 3",
     ],
     answer: "It is winter, take coat!!",
   },
   {
     type: "Temperature program",
-    text: "If temperature is `25`, what should the program print?",
+    text: "If temperature is 25, what should the program print?",
     options: [
       "It is winter, take coat!!",
       "It is hot outside, wear tshirts",
       "It is too hot, dont go outside!!",
-      "25 is odd",
+      "The loop runs 25 times",
     ],
     answer: "It is hot outside, wear tshirts",
   },
   {
     type: "Temperature program",
-    text: "If temperature is `45`, what should the program print?",
+    text: "If temperature is 45, what should the program print?",
     options: [
       "It is winter, take coat!!",
       "It is hot outside, wear tshirts",
       "It is too hot, dont go outside!!",
-      "45 is divisible by 7",
+      "It is an even number",
     ],
     answer: "It is too hot, dont go outside!!",
   },
   {
     type: "Odd or Even",
-    text: "If `num % 2 == 0`, the number is:",
-    options: ["odd", "even", "hot", "a loop"],
+    text: "If num % 2 == 0, the number is:",
+    options: ["odd", "even", "divisible by 7", "a variable"],
     answer: "even",
   },
 ];
